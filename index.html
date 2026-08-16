@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sky Ranger</title>
+  <link rel="canonical" href="https://twilliams0001.github.io/sky-ranger/" />
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var c = (params.get("c") || "").toUpperCase().replace(/[^A-HJ-NP-Z]/g, "").slice(0, 6);
+      if (/^[A-HJ-NP-Z]{6}$/.test(c)) {
+        location.replace("https://twilliams0001.github.io/sky-ranger/lobby.html?c=" + encodeURIComponent(c));
+      } else {
+        location.replace("https://twilliams0001.github.io/sky-ranger/");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Sky Ranger moved — <a href="https://twilliams0001.github.io/sky-ranger/play.html">play free online</a>.</p>
+</body>
+</html>
